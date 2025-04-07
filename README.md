@@ -38,4 +38,6 @@ This project builds a model to predict passwords from hash data. We’ve broken 
 
 ## Contact
 
-*   [Your GitHub username or contact information.]
+*  
+J.Ekrami
+ekrami@gmail.com
