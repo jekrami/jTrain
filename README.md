@@ -16,26 +16,26 @@ This project builds a model to predict passwords from hash data. We’ve broken 
 ### Stage 00: Data Preparation
 
 *   **Script:** `00-Prepare_Data.py`
-*   **Purpose:** Download and save the RockYou.txt wordlist. (You can find and download it yourself: [http://www.rockyou.com/rockyou.txt](http://www.rockyou.com/rockyou.txt))
-*   **Command:** `00-Prepare_Data.py` (This script handles the download and saving.)
+*   **Purpose:** Create coresspondig hash for each password and create dataset.
+*   **Command:** `python 00-Prepare_Data.py` (This script handles the create and saving.)
 
 ### Stage 01: Data Optimization & Tokenization
 
 *   **Script:** `01-Optimize_Data_&_Tockenize.py`
-*   **Purpose:** Optimize the downloaded data (e.g., cleaning, filtering) and perform tokenization.
-*   **Command:** `01-Optimize_Data_&_Tockenize.py --input_file rockyou.txt --output_file optimized_data.txt --tokenize True` (Example command - replace with your actual command line arguments)
+*   **Purpose:** Optimize the prepared data (e.g., cleaning, filtering) and perform tokenization.
+*   **Command:** `python 01-Optimize_Data_&_Tockenize.py`
 
 ### Stage 02: Load Tokenized Data & Train
 
 *   **Script:** `02-Load_TockenizedData_&_Train.py`
 *   **Purpose:** Load the optimized data created in Stage 01 and train the model.
-*   **Command:** `02-Load_TockenizedData_&_Train.py --data_file optimized_data.txt --model_type [model_type] --epochs 10` (Example command - replace with your actual command line arguments)
+*   **Command:** `python 02-Load_TockenizedData_&_Train.py `
 
 ### Stage 03: Model Testing
 
 *   **Script:** `03-Test.py`
 *   **Purpose:** Evaluate and test the trained model.
-*   **Command:** `03-Test.py --model_path [model_path]` (Example command - replace with your actual command line arguments)
+*   **Command:** `python  03-Test.py --model_path`
 
 ## Dependencies
 
