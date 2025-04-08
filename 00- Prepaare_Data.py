@@ -8,7 +8,7 @@ rockyou_path = "rockyou.txt"
 with open(rockyou_path, "r", encoding="latin-1") as f:  # latin-1 handles special characters
     passwords = [line.strip() for line in f if line.strip()]
 
-# Optional: Limit to first N lines (e.g. 100k for now)
+# Optional: Limit to first N lines (e.g. 10k for now)
 passwords = passwords[:10_000]
 
 # Hash each password with SHA256
